@@ -1,0 +1,43 @@
+.pop-up{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 99999999999;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #000;
+    background-color: #fff;
+    
+}
+
+.pop-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.pop-buttons > button{
+        max-width: 80px;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.pop-buttons > button:hover{
+    scale: 1.04;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&display=swap');
+:root{
+  --background-color:#003049
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body{
+  font-family: "Open Sans", serif;
+background: var(--background-color);
+}
+
+#root{
+
+  min-height: 100vh;
+}
+
+select{
+  padding:0.4rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+
+@media screen and (max-width:500px) {
+  select{
+    max-width: 100px;
+    padding: 0.2rem;
+    font-size: 8px;
+  }
+}

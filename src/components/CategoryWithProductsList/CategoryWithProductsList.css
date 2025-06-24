@@ -1,0 +1,256 @@
+.category-products-list {
+  width: 100%;
+  padding: 2rem;
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-section {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.category-section:hover {
+  transform: translateY(-4px);
+}
+
+.category-header {
+  display: flex;
+  background: #e63946;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.category-header img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.view-category{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.view-category h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffff;
+}
+
+.edit-category{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem;  
+}
+
+.edit-category input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 150px;
+}
+
+.category-btn-container {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.category-btn-container button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.category-btn-container button:hover {
+  background-color: #1976d2;
+}
+
+.products-list {
+    width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+gap: 1rem;
+}
+
+.product-container{
+
+    width: 100%;
+    display: flex;
+    padding: 0.4rem 1rem;
+    gap: 1rem;
+}
+
+.product {
+    position: relative;
+    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 1rem;
+  gap: 1rem;
+  box-shadow: inset 0 0 0 1px #eee;
+  cursor: pointer;
+}
+
+.product:hover{
+  background: #e63946;
+}
+
+.product-item {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.product-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.product-item input,
+.product-item textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.product-item.buttons {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-item.buttons button {
+  padding: 0.3rem 0.7rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-item.buttons button:hover {
+  background-color: #388e3c;
+}
+
+.sale-price {
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.original-price {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #777;
+}
+
+.delete-btn {
+  align-self: center;
+  background-color: #e53935;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.no-products-message {
+  color: #999;
+  text-align: center;
+  font-style: italic;
+}
+
+.img-label,
+.img-label-product {
+  position: relative;
+  cursor: pointer;
+}
+
+.img-input {
+  display: none;
+}
+
+.add-img-icon, .no-photo {
+  font-size: 2rem;
+  color: #bbb;
+}
+
+@media screen and (max-width:500px) {
+.category-products-list{
+  padding: 0;
+}
+
+  .view-category > h3{
+  font-size: 0.8rem;
+  margin: 0 10px;
+}
+
+
+
+.category-header{
+  overflow-x: auto;
+}
+
+.category-header img{
+  min-width: 80px;
+  margin: 4px;
+}
+
+.products-list{
+  padding: 0.4rem;
+}
+  .product-container{
+    position: relative;
+    padding: 0.1rem , 0.3rem;
+    overflow-x: auto;
+  }
+
+  .product-item.buttons{
+    position: sticky;
+
+  }
+.product-item input,
+.product-item textarea {
+width: max-content;
+font-size: 8px;
+padding: 0.2rem;
+}
+}

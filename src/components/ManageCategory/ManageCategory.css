@@ -1,0 +1,65 @@
+.category-container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+text-align: center;
+  padding: 1rem;
+  color: #ffff;
+  gap: 2rem;
+}
+
+.back-btn{
+  font-size: 2rem;
+position: absolute;
+top: 1rem;
+right: 2rem;
+cursor: pointer;
+} 
+
+.category-title{
+  font-size: 2.6rem;
+  border-bottom: 1px solid;
+}
+
+.input-section-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+text-align: center;
+width: 100%;
+padding: 20px;
+gap: 4rem;
+justify-content: center;
+background-color: #ffff;
+border-radius: 1.5rem;
+}
+
+
+.input-section-body > label{
+  width: max-content;
+}
+
+.input-section-body > input{
+  padding: 0.4rem 1rem;
+  border: 2px solid #000;
+  outline: none;
+}
+
+.input-section .add-category-btn{
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.4rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+.add-category-btn:hover{
+  scale: 1.04;
+}
