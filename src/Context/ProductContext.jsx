@@ -51,7 +51,7 @@ promotion: {
 const handleProducts = async () => {
   try {
     setIsLoading(true);
-    const response = await axios.get("https://yossi-shop.onrender.com/Products/", { timeout: 10000 });
+    const response = await axios.get("https://yossi-shop.onrender.com/Products/");
     
     // Avoid unnecessary re-renders
     if (JSON.stringify(products) !== JSON.stringify(response.data)) {

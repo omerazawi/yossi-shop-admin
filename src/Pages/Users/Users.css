@@ -1,0 +1,51 @@
+.users-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: "Segoe UI", Arial, sans-serif;
+  direction: rtl;
+}
+
+.users-wrapper h2 {
+  text-align: center;
+  color: #003566;
+  margin-bottom: 1rem;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.users-table th {
+  background: #eef4ff;
+}
+
+.users-table button {
+  margin: 0 0.3rem;
+  padding: 0.25rem 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.users-table button:first-of-type {
+  background: #3178ff;
+  color: #fff;
+}
+
+.users-table button:last-of-type {
+  background: #e63946;
+  color: #fff;
+}
+
+.error {
+  color: #e63946;
+  text-align: center;
+}

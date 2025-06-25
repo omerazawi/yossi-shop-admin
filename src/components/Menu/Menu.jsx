@@ -8,7 +8,7 @@ export default function Menu() {
         <ul>
             <li><NavLink className={({isActive}) => (isActive ? 'active-link' : '')} to='/'>דף הבית</NavLink></li>
             <li><NavLink className={({isActive}) => (isActive ? 'active-link' : '')} to='/products'>ניהול מוצרים</NavLink></li>
-            <li><NavLink className={({isActive}) => (isActive ? 'active-link' : '')} to='/shipping'>ניהול הזמנות</NavLink></li>
+            <li><NavLink className={({isActive}) => (isActive ? 'active-link' : '')} to='/Orders'>ניהול הזמנות</NavLink></li>
             <li><NavLink className={({isActive}) => (isActive ? 'active-link' : '')} to='/users'>ניהול משתמשים</NavLink></li>
         </ul>
     </div>

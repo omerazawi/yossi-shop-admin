@@ -14,6 +14,7 @@ import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Login from "./Pages/Login/Login";
 import PrivateRoute from "./Routes/PrivateRoute";
 import { ProductProvider } from "./Context/ProductContext";
+import AdminOrders from "./Pages/AdminOrders/AdminOrders";
 
 function AppRoutes() {
   const location = useLocation();
@@ -34,7 +35,8 @@ function AppRoutes() {
           <Route path="/users" element={<PrivateRoute><Users /></PrivateRoute>} />
           <Route path="/categorys" element={<PrivateRoute><ManageCategory /></PrivateRoute>} />
           <Route path="/addproducts" element={<PrivateRoute><AddProduct /></PrivateRoute>} />
-          <Route path="/product/:id" element={<PrivateRoute><ProductDetails /></PrivateRoute>} />
+          <Route path="/Orders" element={<PrivateRoute><AdminOrders /></PrivateRoute>} />
+
         </Routes>
       ) : (
         <Loading />
